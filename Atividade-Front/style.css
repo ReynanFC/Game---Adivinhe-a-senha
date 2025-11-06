@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #061a50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    display: flex;
+    gap: 80px;
+}
+
+img {
+    width: 290px;
+}
+
+#conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#mensagem {
+    position: absolute;
+    top: 130px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(76, 87, 99);
+}
+
+#mensagem.errou {
+    color: rgb(214, 6, 6);
+}
+
+#mensagem.acertou {
+    color: rgb(14, 66, 14);
+}
+
+#tentativa {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 20px;
+    color: rgb(24, 1, 39);
+}
+
+form {
+    position: absolute;
+    bottom: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    gap: 25px;
+}
+
+input {
+    transform: translateY(-60px);
+    outline: none;
+    height: 80px;
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid #352a0dcc;
+    color: rgb(58, 56, 56);
+}
+
+input.acertou {
+    border-color: green;
+}
+
+input.errou {
+    border-color: red;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(209, 174, 16);
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+button:active{
+    transform: translateY(2px); 
+    box-shadow: 0 2px 0 darkgray;
+
+}
+
+.imagemTrofeu {
+  animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
